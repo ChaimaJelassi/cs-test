@@ -42,7 +42,7 @@ Is how often the users of ContentSquare are connecting to the applcation and how
 Among the **Product Usage** tab of the excel file, I selected the **days_of_activity** as the main column which refers to the activity of the users per month.
 ```
 Let's consider Month is: 2019/06  
-The customer X was active 21 days over 30 which is considered as a good score.
+The customer X was active 21 days over 30 and thus considered as an active user.
 ```
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/productusage.PNG) </br>
 After the processing of the feature as mentioned in this SQL query and depending on the score given,the **Product Usage final score** is devided into 3 intervals as follows :
@@ -64,7 +64,7 @@ Let's consider that the customer X, on the 2018/06 gave a score of 8
 				    on the 2019/01 gave a score of 7 
 				    on the 2020/03 gave a score of 9 
 				    Avg_score = sum(8,7,9)/3 = 8
-The customer X has a score of 8,meaning that he is satisfied with the product and will highly recommend it to others.
+The customer X has a score of 8, meaning he is satisfied with the product and will highly recommend it to others.
 ```
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/nps.PNG)
 
