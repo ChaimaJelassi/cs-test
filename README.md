@@ -32,7 +32,13 @@ In this section, I will describe the **features** I have considered as key measu
 The following are the four features selected among the 6 tabs in the given excel file and considered as the most relevant ones for the calculation of the CHS.
 
 #### Product Usage 
-Is how often the users of ContentSquare are connecting to the applcation and how much time they are spending on it.
+Is how often the users of ContentSquare are connecting to the applcation and how much time they are spending on it.</br>
+Among the **Product Usage** tab of the excel file, I selected the column *days_of_activity* as our first Feature which refers to the activity of the users per month.
+```
+Let's consider Month is: 2019/06  
+The user X was active 21 days over 30 which is considered as a good score.
+```
+![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/productusage.PNG)
 
 #### Net Promoter Score
 Is a customer loyalty and satisfaction measurement taken from asking customers how likely they are to recommend your product or service to others.</br>
@@ -40,12 +46,14 @@ Depending on the score given to the Net Promoter question, three categories of p
 * Promoters = respondents giving a 9 or 10 score
 * Passives = respondents giving a 7 or 8 score
 * Detractors = respondents giving a 0 to 6 score
+![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/nps.PNG)
 
 #### Satisfaction
 Is how much users are satisfied with the support team.
+![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/satisfaction.PNG)
 #### Certification 
 Is how much users are certified and recognized as potential power users.
-
+![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/certification.PNG)
 ### Calculation Method
 
-![alt text](http://url/to/img.png)
+
