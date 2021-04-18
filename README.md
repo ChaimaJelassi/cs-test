@@ -88,13 +88,13 @@ Among the **Support Tickets** tab of the excel file, I selected the **satisfacti
 Let's consider that the customer X : created a JIRA ticket on the 2020/02/19, the satisfaction score was "Good".
 				     created a JIRA ticket on the 2020/02/19, the satisfaction score was "Unoffered".
 				     created a JIRA ticket on the 2020/04/12, the satistfaction score was "Unoffered".
-The customer X has a overall satisfaction score of 33, which means, he is recognized as a cool user.
+The customer X has a overall satisfaction score of 33, which means, he is recognized as an unsatisfied user.
 ```
 Depending on the score given to the Satisfaction, three categories of customers can be distinguished:
 
-* unsatisfied = **avg_satisfaction_score** **>=0** and **<33**then **0**
-* Cool =  **avg_satisfaction_score** **>=33** and **<66**  then **50**
-* Satistfied =  **avg_satisfaction_score** **>=66**  then **100**
+* unsatisfied = **avg_satisfaction_score** **>=0** and **<=33**then **0**
+* Cool =  **avg_satisfaction_score** **>33** and **<=66**  then **50**
+* Satistfied =  **avg_satisfaction_score** **>66**  then **100**
 
 ```
 Where 
