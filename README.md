@@ -12,6 +12,7 @@ This repository contains the <strong>Customer Health Score</strong> calculation.
       * [Satisfaction](#satisfaction)
       * [Certification](#certification)
     * [Calculation Method](#calculation-method)
+  * [Reporting]
      
      
 ## What?
@@ -67,7 +68,7 @@ The customer X has an overall score of 8, meaning he is satisfied with the produ
 ```
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/nps.PNG)
 
-Depending on the score given to the Net Promoter question, three categories of customers can be distinguished:
+After the processing of the feature as mentioned in this SQL query and depending on the score given to the Net Promoter question, three categories of customers can be distinguished:
 
 * Detractors = **avg_nps_score** **>0** and **<=3**  then **0**
 * Passives =  **avg_nps_score** **>3** and **<=6**  then **50**
@@ -90,9 +91,9 @@ Let's consider that the customer X : created a JIRA ticket on the 2020/02/19, th
 				     created a JIRA ticket on the 2020/04/12, the satistfaction score was "Unoffered".
 The customer X has a overall satisfaction score of 33, which means, he is recognized as an unsatisfied user.
 ```
-Depending on the score given to the Satisfaction, three categories of customers can be distinguished:
+ After the processing of the feature as mentioned in this SQL query and depending on the score given to the Satisfaction, three categories of customers can be distinguished:
 
-* unsatisfied = **avg_satisfaction_score** **>=0** and **<=33**then **0**
+* unsatisfied = **avg_satisfaction_score** **>=0** and **<=33** then **0**
 * Cool =  **avg_satisfaction_score** **>33** and **<=66**  then **50**
 * Satistfied =  **avg_satisfaction_score** **>66**  then **100**
 
@@ -102,7 +103,7 @@ avg_satisfaction_score = AVG(satisfaction_score) per customer
 ```
 
 #### Certification 
-Is how much users are certified and recognized as potential power users.
+Is how much users are certified and recognized as potential power users.</br>
 Among the **Certifications** tab of the excel file, I selected the **certif_level** as the main column which refers to the level of the certification achieved by the customer given a period of time and for a specific course.
 ```
 Let's consider that the customer X, on the 2018/06 took level1 certification in the "Contentsquare Fundamentals" course.
@@ -111,7 +112,7 @@ Let's consider that the customer X, on the 2018/06 took level1 certification in 
 The customer X has a overall certification level score of 66, meaning he is recognized as a static user.
 ```
 
-Depending on the score given to the Certifications, three categories of customers can be distinguished:
+After the processing of the feature as mentioned in this SQL query and depending on the score given to the Certifications, three categories of customers can be distinguished:
 
 * Unpromising = **avg_certification_score** **=0** then **0**
 * Statics =  **avg_certification_score** **>0** and **<75**  then **50**
@@ -124,4 +125,5 @@ avg_certification_score = AVG(certification_score) per customer
 
 ### Calculation Method
 
+## Reporting
 
