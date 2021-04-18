@@ -29,16 +29,27 @@ Some common objectives of implementing a Customer Health Score are to:
 In this section, I will describe the **features** I have considered as key measures and the **method** used to calculate the Customer Health.
 
 ### Selected Features
-The following are the four features selected among the 6 tabs in the given excel file and considered as the most relevant ones for the calculation of the CHS.
+The following are the four features selected among the 6 tabs in the given excel file and considered as the most relevant ones for the calculation of the CHS. <br/>
+By the end, each Feature will be assigned a percentage based on its importance as follows:
+
+* **product usage 30%**
+* **net promoter score 30%**
+* **satisfaction 30%**
+* **certification 10%**
 
 #### Product Usage 
 Is how often the users of ContentSquare are connecting to the applcation and how much time they are spending on it.</br>
-Among the **Product Usage** tab of the excel file, I selected the column *days_of_activity* as our first Feature which refers to the activity of the users per month.
+Among the **Product Usage** tab of the excel file, I selected the **days_of_activity** as the main column which refers to the activity of the users per month.
 ```
 Let's consider Month is: 2019/06  
 The user X was active 21 days over 30 which is considered as a good score.
 ```
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/productusage.PNG)
+After the processing of the feature as mentioned in this SQL query, the **Product Usage final score** was 
+will be devided into 3 intervals as follows :
+```
+
+```
 
 #### Net Promoter Score
 Is a customer loyalty and satisfaction measurement taken from asking customers how likely they are to recommend your product or service to others.</br>
