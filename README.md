@@ -38,14 +38,14 @@ By the end, each Feature will be assigned a percentage based on its importance a
 * **certification 10%**
 
 #### Product Usage 
-Is how often the users of ContentSquare are connecting to the applcation and how much time they are spending on it.</br>
+Is how often the users of ContentSquare are connecting to the application and how much time they are spending on it.</br>
 Among the **Product Usage** tab of the excel file, I selected the **days_of_activity** as the main column which refers to the activity of the users per month.
 ```
 Let's consider Month is: 2019/06  
-The customer X was active 21 days over 30 and thus considered as an active user.
+The customer X was active 21 days over 30, he will be then considered as an active user.
 ```
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/productusage.PNG) </br>
-After the processing of the feature as mentioned in this SQL query and depending on the score given,the **Product Usage final score** is devided into 3 intervals as follows :
+After the processing of the feature as mentioned in this SQL query and depending on the score given, the **Product Usage final score** will be devided into 3 intervals as follows :
 
 * Inactive = **avg_usage_score_per_month** **between 0** and **9**  then **0** </br>
 * Occasional = **avg_usage_score_per_month** **between 10** and **14**  then **50** </br>
@@ -63,16 +63,20 @@ Among the **Net Promoter Score** tab of the excel file, I selected the **nps_sco
 Let's consider that the customer X, on the 2018/06 gave a score of 8 
 				    on the 2019/01 gave a score of 7 
 				    on the 2020/03 gave a score of 9 
-				    Avg_score = sum(8,7,9)/3 = 8
-The customer X has a score of 8, meaning he is satisfied with the product and will highly recommend it to others.
+The customer X has an overall score of 8, meaning he is satisfied with the product and will highly recommend it to others.
 ```
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/nps.PNG)
 
-Depending on the score given to the Net Promoter question, three categories of people can be distinguished:
+Depending on the score given to the Net Promoter question, three categories of customers can be distinguished:
 
-* Detractors = **avg_Score_nps** **>0** and **<=3**  then **0**
-* Passives =  **avg_Score_nps** **>3** and **<=6**  then **50**
-* Promoters =  **avg_Score_nps** **>6**  then **100**
+* Detractors = **avg_nps_score** **>0** and **<=3**  then **0**
+* Passives =  **avg_nps_score** **>3** and **<=6**  then **50**
+* Promoters =  **avg_nps_score** **>6**  then **100**
+
+```
+Where 
+avg_Score_nps = AVG(nps_score) per customer
+```
 
 #### Satisfaction
 Is how much users are satisfied with the support team.
@@ -80,7 +84,30 @@ Is how much users are satisfied with the support team.
 
 #### Certification 
 Is how much users are certified and recognized as potential power users.
-![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/certification.PNG)
+Among the **Certifications** tab of the excel file, I selected the **certif_level** as the main column which refers to the level of the certification achieved by the customer given a period of time and for a specific course.
+```
+Let's consider that the customer X, on the 2018/06 took level1 certification in the "Contentsquare Fundamentals" course.
+				    on the 2019/01 took level2 certification in the "Contentsquare Expert General" course.
+				    on the 2020/03 took level1 certification in the "Certification Expert pour E-Merchandiser" course.
+The customer X has a overall certification level score of 66, meaning he is recognized as a static user.
+```
+
+Depending on the score given to the Certifications, three categories of customers can be distinguished:
+
+		   when [avg_Score] >0 and [avg_Score] <75  then 50
+	  when [avg_Score] >= 75 then 100
+
+* Unpromising = **avg_certification_score** **=0** then **0**
+* Statics =  **avg_certification_score** **>0** and **<75**  then **50**
+* Potentials =  **avg_certification_score** **>75**  then **100**
+
+```
+Where 
+avg_Score_nps = AVG(nps_score) per customer
+```
+
+
+
 ### Calculation Method
 
 
