@@ -26,7 +26,7 @@ Some common objectives of implementing a Customer Health Score are to:
 * Detect highly engaged and loyal clients, who would make excellent advocates.
 
 ## How?
-In this section, I will describe the **features** I have considered as key measures and the **method** used to calculate the Customer Health.
+In this section, I will describe the **features** I have considered as key measures and the **method** used to calculate the Customer Health Score.
 
 ### Selected Features
 The following are the four features selected among the 6 tabs in the given excel file and considered as the most relevant ones for the calculation of the CHS. <br/>
@@ -44,24 +44,33 @@ Among the **Product Usage** tab of the excel file, I selected the **days_of_acti
 Let's consider Month is: 2019/06  
 The user X was active 21 days over 30 which is considered as a good score.
 ```
-![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/productusage.PNG)
-After the processing of the feature as mentioned in this SQL query, the **Product Usage final score** was 
-will be devided into 3 intervals as follows :
-```
+![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/productusage.PNG) </br>
+After the processing of the feature as mentioned in this SQL query and depending on the score given,the **Product Usage final score** is devided into 3 intervals as follows :
 
+* Inactive = **avg_usage_score_per_month** **between 0** and **9**  then **0** </br>
+* Occasional = **avg_usage_score_per_month** **between 10** and **14**  then **50** </br>
+* Active = **avg_usage_score_per_month** **>= 15**  then **100** </br>
+
+```
+Where 
+avg_usage_score_per_month = sum(days_of_activity) as AllActivity /NbOfMonths
 ```
 
 #### Net Promoter Score
 Is a customer loyalty and satisfaction measurement taken from asking customers how likely they are to recommend your product or service to others.</br>
 Depending on the score given to the Net Promoter question, three categories of people can be distinguished:
-* Promoters = respondents giving a 9 or 10 score
-* Passives = respondents giving a 7 or 8 score
-* Detractors = respondents giving a 0 to 6 score
+when [avg_Score_nps] > 0 and [avg_Score_nps] <= 3  then 0 
+	 when [avg_Score_nps] >3 and [avg_Score_nps] <=6  then 50
+	 when [avg_Score_nps] >6  then 100
+* Promoters = **avg_Score_nps** **>0** and **<=3**  then **0**
+* Passives =  **avg_Score_nps** **>3** and **<=6**  then **50**
+* Detractors =  **avg_Score_nps** **>6**  then **100**
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/nps.PNG)
 
 #### Satisfaction
 Is how much users are satisfied with the support team.
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/satisfaction.PNG)
+
 #### Certification 
 Is how much users are certified and recognized as potential power users.
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/certification.PNG)
