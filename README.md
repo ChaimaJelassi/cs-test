@@ -47,3 +47,5 @@ Is how much users are satisfied with the support team.
 Is how much users are certified and recognized as potential power users.
 
 ### Calculation Method
+
+![alt text](http://url/to/img.png)
