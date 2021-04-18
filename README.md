@@ -80,7 +80,26 @@ avg_Score_nps = AVG(nps_score) per customer
 
 #### Satisfaction
 Is how much users are satisfied with the support team.
+Among the **Support Tickets** tab of the excel file, I selected the **satisfaction_score** as the main column which reflects the satisfaction of the customer for each JIRA ticket created.
+
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/satisfaction.PNG)
+
+```
+Let's consider that the customer X : created a JIRA ticket on the 2020/02/19, the satisfaction score was "Good".
+				     created a JIRA ticket on the 2020/02/19, the satisfaction score was "Unoffered".
+				     created a JIRA ticket on the 2020/04/12, the satistfaction score was "Unoffered".
+The customer X has a overall satisfaction score of 33, which means, he is recognized as a cool user.
+```
+Depending on the score given to the Satisfaction, three categories of customers can be distinguished:
+
+* unsatisfied = **avg_satisfaction_score** **>=0** and **<33**then **0**
+* Cool =  **avg_satisfaction_score** **>=33** and **<66**  then **50**
+* Satistfied =  **avg_satisfaction_score** **>=66**  then **100**
+
+```
+Where 
+avg_satisfaction_score = AVG(satisfaction_score) per customer
+```
 
 #### Certification 
 Is how much users are certified and recognized as potential power users.
@@ -94,19 +113,14 @@ The customer X has a overall certification level score of 66, meaning he is reco
 
 Depending on the score given to the Certifications, three categories of customers can be distinguished:
 
-		   when [avg_Score] >0 and [avg_Score] <75  then 50
-	  when [avg_Score] >= 75 then 100
-
 * Unpromising = **avg_certification_score** **=0** then **0**
 * Statics =  **avg_certification_score** **>0** and **<75**  then **50**
-* Potentials =  **avg_certification_score** **>75**  then **100**
+* Potentials =  **avg_certification_score** **>=75**  then **100**
 
 ```
 Where 
-avg_Score_nps = AVG(nps_score) per customer
+avg_certification_score = AVG(certification_score) per customer
 ```
-
-
 
 ### Calculation Method
 
