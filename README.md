@@ -29,6 +29,21 @@ Some common objectives of implementing a Customer Health Score are to:
 In this section, I will describe the **features** I have considered as key measures and the **method** used to calculate the Customer Health.
 
 ### Selected Features
+The following are the four features selected among the 6 tabs in the given excel file and considered as the most relevant ones for the calculation of the CHS.
 
+#### Product Usage 
+Is how often the users of ContentSquare are connecting to the applcation and how much time they are spending on it.
+
+#### Net Promoter Score
+Is a customer loyalty and satisfaction measurement taken from asking customers how likely they are to recommend your product or service to others.</br>
+Depending on the score given to the Net Promoter question, three categories of people can be distinguished:
+* Promoters = respondents giving a 9 or 10 score
+* Passives = respondents giving a 7 or 8 score
+* Detractors = respondents giving a 0 to 6 score
+
+#### Satisfaction
+Is how much users are satisfied with the support team.
+#### Certification 
+Is how much users are certified and recognized as potential power users.
 
 ### Calculation Method
