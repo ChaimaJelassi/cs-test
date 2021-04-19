@@ -1,5 +1,4 @@
 <p align="center">
-This repository contains the <strong>Customer Health Score</strong> calculation.
 </p>
 
 # Table of contents
