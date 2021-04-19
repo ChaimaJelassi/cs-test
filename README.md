@@ -28,7 +28,19 @@ Some common objectives of implementing a Customer Health Score are to:
 
 ## How?
 In this section, I will describe the **features** I have considered as key measures and the **method** used to calculate the Customer Health Score.
-Before jumping to 
+
+Before jumping to the implementation, the following are some notes to help you understand my methodology of work:
+
+```
+1. I worked only with customers who have a contract status = "renewed_or_still_active" : because those who have churned are no more interested in our product, so we rather concentrate on the actual customers and retain them.
+2. The product usage Tab collects the activity of customers per month. ( several lines per customer ) 
+3. The cetifications Tab collects data about the certifications taken by customers. ( several lines per customer )
+4. The net promoter score Tab collects data about the ratings of the product by customers. ( several lines per customer )
+5. The support tickets Tab collects data about the tickets opened by customers. ( several lines per customer )
+6. For 2,3,4,and 5, for the sake of simplicity, I processed data and got a line per customer as an output.
+7. Categorical Features selected(satisfaction_score,certif_level) were converted to numerical. 
+```
+
 
 ### Selected Features
 The following are the four features selected among the 6 tabs in the given excel file and considered as the most relevant ones for the calculation of the CHS. <br/>
@@ -130,7 +142,7 @@ Once the final scores of the columns selected are processed, we move now to the 
 SUM (avg_usage_score_per_month * 30% ,avg_nps_score * 30% ,avg_satisfaction_score * 30%,avg_certification_score * 10%) 
 ```
 
-Once the list of customer features is built and CHS calculated, it’s time to look at which customers are healthy or those that are at risk.
+Now that the formula is applied, it’s time to look at which customers are healthy or those that are at risk.
 ## Reporting
 
 In this section, I will show you the final output table containing the CHS score and it source SQL code.</br>
