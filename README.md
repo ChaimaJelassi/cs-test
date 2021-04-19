@@ -15,9 +15,9 @@ This repository contains the <strong>Customer Health Score</strong> calculation.
   * [Reporting](#Reporting)
      
      
-## What?
-It is an index made up of several “vital” scores/KPIs. It gives you an overall idea of how healthy a customer’s relationship is with your product. It also 
-enables you to predict how your relationship with a given customer may change in the future like <strong>renewing</strong> or <strong>churning</strong> subscriptions.</br>
+## What is a Customer Health Score?
+It is an index made up of several “vital” scores/KPIs, giving an overall idea of how healthy a customer’s relationship is with your product. It also enables you to predict how your relationship with a given customer may change in the future like <strong>renewing</strong> or <strong>churning</strong> subscriptions.</br> 
+In a nutshell, we can think of it as an early warning system to reduce the risk of churns. It notifies decision makers to start to take actions at the right time.
 
 ## Why?
 Some common objectives of implementing a Customer Health Score are to:
@@ -28,6 +28,7 @@ Some common objectives of implementing a Customer Health Score are to:
 
 ## How?
 In this section, I will describe the **features** I have considered as key measures and the **method** used to calculate the Customer Health Score.
+Before jumping to 
 
 ### Selected Features
 The following are the four features selected among the 6 tabs in the given excel file and considered as the most relevant ones for the calculation of the CHS. <br/>
@@ -122,15 +123,23 @@ After the processing of the feature as mentioned in this SQL query and depending
 Where 
 avg_certification_score = AVG(certification_score) per customer
 ```
-
 ### Calculation Method
-Once the final scores of the columns selected are processed, we proceed to the final calculation of the customer Health Score as follows :
+Once the final scores of the columns selected are processed, we move now to the final calculation of the *Customer Health Score* using the following formula : 
+
 ```
 SUM (avg_usage_score_per_month * 30% ,avg_nps_score * 30% ,avg_satisfaction_score * 30%,avg_certification_score * 10%) 
 ```
+
+Once the list of customer features is built and CHS calculated, it’s time to look at which customers are healthy or those that are at risk.
 ## Reporting
 
 In this section, I will show you the final output table containing the CHS score and it source SQL code.
-I chose powerbi as a visualization tool, I connected the final table to it and the following figures are my results :
+To classify customers based on the CHS, I used the following indicators: 
+```
+Healthy : GREEN COLOR
+Okay : ORANGE COLOR
+Unhealthy : RED COLOR
+```
+**Unhealthy indicates at risk, Orange is ok and Green indicates a healthy customer.**
 
-
+I chose powerbi as a visualization tool, I connected the final table to it and the following figures show my results :
