@@ -45,10 +45,10 @@ Before jumping to the implementation, the following are some notes to help you u
 The following are the four features selected among the 6 tabs in the given excel file and considered as the most relevant ones for the calculation of the CHS. <br/>
 By the end, each Feature will be assigned a percentage based on its importance as follows:
 
-* **product usage 30%**
-* **net promoter score 30%**
-* **satisfaction 30%**
-* **certification 10%**
+* **product usage:  30% from the global CHS Score**
+* **net promoter: score 30% from the global CHS Score**
+* **satisfaction: 30% from the global CHS Score**
+* **certification: 10% from the global CHS Score**
 
 #### Product Usage 
 Is how often the users of ContentSquare are connecting to the application and how much time they are spending on it.</br>
