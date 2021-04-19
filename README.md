@@ -133,8 +133,8 @@ SUM (avg_usage_score_per_month * 30% ,avg_nps_score * 30% ,avg_satisfaction_scor
 Once the list of customer features is built and CHS calculated, it’s time to look at which customers are healthy or those that are at risk.
 ## Reporting
 
-In this section, I will show you the final output table containing the CHS score and it source SQL code.
-To classify customers based on the CHS, I used the following indicators: 
+In this section, I will show you the final output table containing the CHS score and it source SQL code.</br>
+To classify customers based on the calculated score, I used the following indicators: 
 ```
 Healthy : GREEN COLOR  
 Okay : ORANGE COLOR
