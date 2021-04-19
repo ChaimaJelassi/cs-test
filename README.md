@@ -33,12 +33,12 @@ Before jumping to the implementation, the following are some notes to help you u
 
 ```
 1. I worked only with customers who have a contract status = "renewed_or_still_active".
-3. The product usage Tab collects the activity of customers per month. ( several lines per customer ) 
-4. The cetifications Tab collects data about the certifications taken by customers. ( several lines per customer )
-5. The net promoter score Tab collects data about the ratings of the product by customers. ( several lines per customer )
-6. The support tickets Tab collects data about the tickets opened by customers. ( several lines per customer )
-7. For 2,3,4,and 5, for the sake of simplicity, I processed data and got a line per customer as an output.
-8. Categorical Features selected(satisfaction_score,certif_level) were converted to numerical. 
+2. The product usage Tab collects the activity of customers per month. ( several lines per customer ) 
+3. The cetifications Tab collects data about the certifications taken by customers. ( several lines per customer )
+4. The net promoter score Tab collects data about the ratings of the product by customers. ( several lines per customer )
+5. The support tickets Tab collects data about the tickets opened by customers. ( several lines per customer )
+6. For 2,3,4,and 5, for the sake of simplicity, I processed data and got a line per customer as an output.
+7. Categorical Features selected(satisfaction_score,certif_level) were converted to numerical. 
 ```
 
 
