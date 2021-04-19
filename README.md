@@ -135,7 +135,7 @@ Once the list of customer features is built and CHS calculated, it’s time to l
 
 In this section, I will show you the final output table containing the CHS score and it source SQL code.
 To classify customers based on the CHS, I used the following indicators: 
-#f03c15 fgr
+
 ```
 Healthy : GREEN COLOR
 Okay : ORANGE COLOR
