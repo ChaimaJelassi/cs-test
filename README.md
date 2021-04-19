@@ -135,12 +135,11 @@ Once the list of customer features is built and CHS calculated, it’s time to l
 
 In this section, I will show you the final output table containing the CHS score and it source SQL code.
 To classify customers based on the CHS, I used the following indicators: 
-
-
-Healthy : GREEN COLOR  ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/green.svg.PNG) </br>
+```
+Healthy : GREEN COLOR  
 Okay : ORANGE COLOR
 Unhealthy : RED COLOR
-
+```
 **Unhealthy indicates at risk, Orange is ok and Green indicates a healthy customer.**
 
 I chose powerbi as a visualization tool, I connected the final table to it and the following figures show my results :
