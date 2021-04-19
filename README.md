@@ -12,7 +12,7 @@ This repository contains the <strong>Customer Health Score</strong> calculation.
       * [Satisfaction](#satisfaction)
       * [Certification](#certification)
     * [Calculation Method](#calculation-method)
-  * [Reporting]
+  * [Reporting](#Reporting)
      
      
 ## What?
@@ -124,6 +124,13 @@ avg_certification_score = AVG(certification_score) per customer
 ```
 
 ### Calculation Method
-
+Once the final scores of the columns selected are processed, we proceed to the final calculation of the customer Health Score as follows :
+```
+SUM (avg_usage_score_per_month * 30% ,avg_nps_score * 30% ,avg_satisfaction_score * 30%,avg_certification_score * 10%) 
+```
 ## Reporting
+
+In this section, I will show you the final output table containing the CHS score and it source SQL code.
+I chose powerbi as a visualization tool, I connected the final table to it and the following figures are my results :
+
 
