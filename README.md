@@ -118,6 +118,8 @@ avg_satisfaction_score = AVG(satisfaction_score) per customer
 #### Certification 
 Is how much users are certified and recognized as potential power users.</br>
 Among the **Certifications** tab of the excel file, I selected the **certif_level** as the main column which refers to the level of the certification achieved by the customer given a period of time and for a specific course.
+![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/certification.PNG)
+
 ```
 Let's consider that the customer X, on the 2018/06 took level1 certification in the "Contentsquare Fundamentals" course.
 				    on the 2019/01 took level2 certification in the "Contentsquare Expert General" course.
