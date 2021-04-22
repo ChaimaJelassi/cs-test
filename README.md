@@ -165,7 +165,6 @@ In this section, I will show you the [SQL source code](https://github.com/Chaima
 of the final table containing the CHS score.</br>
 To classify customers based on the calculated score, I used the following indicators: 
 
-<span style="color:blue">some *blue* text</span>.
 ```
 Healthy : GREEN COLOR  
 Okay : ORANGE COLOR
