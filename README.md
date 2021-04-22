@@ -175,14 +175,14 @@ Unhealthy : RED COLOR
 I chose **Microsoft Power BI** as a visualization tool.</br>
 The following vizualizations show respectively an example of each score : Low , Medium or High score.
 
-* **Low score:
+* **Low score:**
 
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/lowscore.png)
 
-* **Medium score:
+* **Medium score:**
 
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/mediumscore.png)
 
-* **High score:
+* **High score:**
 
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/highscore.png)
