@@ -150,7 +150,7 @@ Avg_certification_Scores = AVG(Satisfaction_Scores_Numerical) per customer
 ```
 ### Calculation Method
 Once the final scores of the columns selected are processed, we move now to the final calculation of the *Customer Health Score* using the following formula : 
-
+![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/formula.PNG)
 
 
 ```
