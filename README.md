@@ -58,7 +58,7 @@ Let's consider Month is: 2019/06
 The customer X was active 21 days over 30, he will be then considered as an active user.
 ```
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/productusage.PNG) </br>
-After the processing of the feature as mentioned in this SQL query and depending on the score given, the **Final_product_usage_score** will be devided into 3 intervals over 100 as follows :
+After the processing of the feature as mentioned in this [SQL query](https://github.com/ChaimaJelassi/cs-test/blob/main/Scripts/TABLES%20LOADING.txt) and depending on the score given, the **Final_product_usage_score** will be devided into 3 intervals over 100 as follows :
 
 * Low = **Avg_score_per_month** **between 0** and **8**  then **33** </br>
 * Good = **Avg_score_per_month** **between 9** and **14**  then **66** </br>
@@ -81,7 +81,7 @@ The customer X has an overall score of 8, meaning he is satisfied with the produ
 ```
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/nps.PNG)
 
-After the processing of the feature as mentioned in this SQL query and depending on the score given to the Net Promoter question, three categories of customers can be distinguished:
+After the processing of the feature as mentioned in this [SQL query](https://github.com/ChaimaJelassi/cs-test/blob/main/Scripts/TABLES%20LOADING.txt) and depending on the score given to the Net Promoter question, three categories of customers can be distinguished:
 
 * Low = **Avg_score_nps** **>0** and **<3**  then **33**
 * Good =  **Avg_score_nps** **>=3** and **<6**  then **66**
@@ -106,7 +106,7 @@ Let's consider that the customer X : created a JIRA ticket on the 2020/02/19, th
 				     created a JIRA ticket on the 2020/04/12, the satistfaction score was "Unoffered".
 The customer X has a overall satisfaction score of 33, which means, he is recognized as an unsatisfied user.
 ```
- After the processing of the feature as mentioned in this SQL query and depending on the score given to the Satisfaction, three categories of customers can be distinguished:
+ After the processing of the feature as mentioned in this [SQL query](https://github.com/ChaimaJelassi/cs-test/blob/main/Scripts/TABLES%20LOADING.txt) and depending on the score given to the Satisfaction, three categories of customers can be distinguished:
 
 
 * Low = **Avg_support_tickets_scores** **>0** and **<33** then **33**
@@ -134,7 +134,7 @@ Let's consider that the customer X, on the 2018/06 took level1 certification in 
 The customer X has a overall certification level score of 66, meaning he is recognized as a static user.
 ```
 
-After the processing of the feature as mentioned in this SQL query and depending on the score given to the Certifications, three categories of customers can be distinguished:
+After the processing of the feature as mentioned in this [SQL query](https://github.com/ChaimaJelassi/cs-test/blob/main/Scripts/TABLES%20LOADING.txt) and depending on the score given to the Certifications, three categories of customers can be distinguished:
 
 * Low = **Avg_certification_Scores** **>0** and **<33**then **33**
 * Good =  **Avg_certification_Scores** **>=33** and **<66**  then **66**
