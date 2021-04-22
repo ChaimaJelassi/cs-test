@@ -139,7 +139,7 @@ After the processing of the feature as mentioned in this [SQL query](https://git
 * Low = **Avg_certification_Scores** **>0** and **<33**then **33**
 * Good =  **Avg_certification_Scores** **>=33** and **<66**  then **66**
 * Excellent =  **Avg_certification_Scores** **>=66**  then **100**
-* 
+
 NOTE: 
 * Categorical **Certif_level** were converted to numerical.
 * when the **Avg_certification_Scores** is equal to 0, I gave 0 as a score.
@@ -161,9 +161,11 @@ SUM (Final_product_usage_score * 30% ,Final_nps_scores * 30% ,Final_support_tick
 Now that the formula is applied, it’s time to look at which customers are healthy or those that are at risk.
 ## Reporting
 
-In this section, I will show you the SQL source code [SQL source code](https://github.com/ChaimaJelassi/cs-test/blob/main/Scripts/LOAD%20CUSTOMER%20HEALTH%20SCORE%20TABLE.txt)
+In this section, I will show you the [SQL source code](https://github.com/ChaimaJelassi/cs-test/blob/main/Scripts/LOAD%20CUSTOMER%20HEALTH%20SCORE%20TABLE.txt)
 of the final table containing the CHS score.</br>
 To classify customers based on the calculated score, I used the following indicators: 
+
+<span style="color:blue">some *blue* text</span>.
 ```
 Healthy : GREEN COLOR  
 Okay : ORANGE COLOR
@@ -171,7 +173,7 @@ Unhealthy : RED COLOR
 ```
 **Red indicates at risk, Orange is ok and Green indicates a healthy customer.**
 
-I chose **Microsoft Power BI** as a visualization tool.
+I chose **Microsoft Power BI** as a visualization tool.</br>
 The following vizualizations show respectively an example of each score : Low , medium or High score.
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/lowscore.png)
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/mediumscore.png)
