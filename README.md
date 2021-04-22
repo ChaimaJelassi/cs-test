@@ -39,7 +39,7 @@ Before jumping to the implementation, the following are some notes to help you u
 6. For 2,3,4,and 5, I processed data and got a line per customer as an output.
 7. Categorical Features selected were converted to numerical. 
 ```
-
+[Here](https://github.com/ChaimaJelassi/cs-test/blob/main/Scripts/USEFUL%20STATISTICS.txt) are some queries performed in order to understand the data.
 
 ### Selected Features
 The following are the four features selected among the 6 tabs in the given excel file and considered as the most relevant ones for the calculation of the CHS. <br/>
