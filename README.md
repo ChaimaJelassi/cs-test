@@ -173,7 +173,13 @@ Unhealthy : RED COLOR
 **Red indicates at risk, Orange is ok and Green indicates a healthy customer.**
 
 I chose **Microsoft Power BI** as a visualization tool.</br>
-The following vizualizations show respectively an example of each score : Low , medium or High score.
+The following vizualizations show respectively an example of each score : Low , Medium or High score.
+
+* Low score:
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/lowscore.png)
+
+* Medium score:
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/mediumscore.png)
+
+* High score:
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/highscore.png)
