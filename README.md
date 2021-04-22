@@ -161,7 +161,8 @@ SUM (Final_product_usage_score * 30% ,Final_nps_scores * 30% ,Final_support_tick
 Now that the formula is applied, it’s time to look at which customers are healthy or those that are at risk.
 ## Reporting
 
-In this section, I will show you the SQL source code of the final table containing the CHS score.</br>
+In this section, I will show you the SQL source code [SQL source code](https://github.com/ChaimaJelassi/cs-test/blob/main/Scripts/LOAD%20CUSTOMER%20HEALTH%20SCORE%20TABLE.txt)
+of the final table containing the CHS score.</br>
 To classify customers based on the calculated score, I used the following indicators: 
 ```
 Healthy : GREEN COLOR  
