@@ -151,6 +151,8 @@ Avg_certification_Scores = AVG(Satisfaction_Scores_Numerical) per customer
 ### Calculation Method
 Once the final scores of the columns selected are processed, we move now to the final calculation of the *Customer Health Score* using the following formula : 
 
+
+
 ```
 SUM (Final_product_usage_score * 30% ,Final_nps_scores * 30% ,Final_support_tickets_Scores * 30%,Final_certification_Scores * 10%) 
 ```
@@ -158,16 +160,16 @@ SUM (Final_product_usage_score * 30% ,Final_nps_scores * 30% ,Final_support_tick
 Now that the formula is applied, it’s time to look at which customers are healthy or those that are at risk.
 ## Reporting
 
-In this section, I will show you the final output table containing the CHS score and its SQL source code.</br>
+In this section, I will show you the SQL source code of the final table containing the CHS score.</br>
 To classify customers based on the calculated score, I used the following indicators: 
 ```
 Healthy : GREEN COLOR  
 Okay : ORANGE COLOR
 Unhealthy : RED COLOR
 ```
-**Unhealthy indicates at risk, Orange is ok and Green indicates a healthy customer.**
+**Red indicates at risk, Orange is ok and Green indicates a healthy customer.**
 
-I chose powerbi as a visualization tool, I connected the final table to it and the following figures show my results :
+I chose **Microsoft Power BI** as a visualization tool.
 The following vizualizations show respectively an example of each score : Low , medium or High score.
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/lowscore.png)
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/mediumscore.png)
