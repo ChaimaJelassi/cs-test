@@ -166,9 +166,9 @@ of the final table containing the CHS score.</br>
 To classify customers based on the calculated score, I used the following indicators: 
 
 ```
-Healthy : GREEN COLOR  
-Okay : ORANGE COLOR
-Unhealthy : RED COLOR
+Excellent : GREEN COLOR  
+Good : ORANGE COLOR
+Low : RED COLOR
 ```
 **Red indicates at risk, Orange is ok and Green indicates a healthy customer.**
 
@@ -179,10 +179,10 @@ The following vizualizations show respectively an example of each score : Low , 
 
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/lowscore.png)
 
-* **Medium score:**
+* **Good score:**
 
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/mediumscore.png)
 
-* **High score:**
+* **Excellent score:**
 
 ![alt text](https://github.com/ChaimaJelassi/cs-test/blob/main/images/highscore.png)
